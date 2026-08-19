@@ -1,0 +1,36 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "dish_AO/foil_gold/foil_silver/shiny_panel follow the established Rosetta/M4V naming convention (dish matched via the shared 'dish' substring). tex_01.001.stl was visually inspected and is a simple low-poly cylinder, consistent with the main photometer housing/bus body. ring_AO.stl (a thin flat ring near an aperture) and the base tex_01.stl (a heterogeneous mix of a helical/coiled structure, a small cone, and misc fragments) were both visually inspected but had no confident single-category match, so both were left Unknown.",
+  "mappings": [
+    {
+      "pattern": "dish",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "foil_gold",
+      "component_type": "foil_gold",
+      "material_id": 8
+    },
+    {
+      "pattern": "foil_silver",
+      "component_type": "foil_silver",
+      "material_id": 9
+    },
+    {
+      "pattern": "shiny_panel",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "tex_01.001",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  }
+}

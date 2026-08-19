@@ -1,0 +1,37 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "aluminum.*/dish_etc/shiny_panel follow the established Rosetta/M4V naming convention (aluminum matched via the shared 'aluminum' substring across all three aluminum.001/002/base files, consistent with generic structural bus material; dish_etc matches Magellan's real large parabolic HGA dish). tex_01.stl was visually inspected and shows the bus, both solar panel wings, and the dish all merged together in one heterogeneous mesh, so it was left Unknown rather than mislabeled as any single one of those.",
+  "mappings": [
+    {
+      "pattern": "magellan_solar_panel",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "magellan_bus",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    },
+    {
+      "pattern": "aluminum",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    },
+    {
+      "pattern": "dish",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "shiny_panel",
+      "component_type": "solar_panel",
+      "material_id": 2
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_split_note": "tex_01.stl was 54.3% of the model and unmapped. It split into 77 central bodies (the bus) and 4 bodies at the boom tips beyond 25% of the span (the solar wings). Original kept as tex_01_ORIGINAL_backup.stl."
+}

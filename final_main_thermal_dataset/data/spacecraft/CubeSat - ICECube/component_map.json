@@ -1,0 +1,15 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "Filenames are generic Layer_0..Layer_5 with no semantic content, so classification was done by visually inspecting each layer's isolated geometry. Layer_0 is a long rectangular box matching the CubeSat chassis (bus). Layer_1 is an extremely thin, long wire-like element consistent with a deployable whip/dipole antenna. Layer_3 and Layer_5 both show a clear repeating photovoltaic-cell grid pattern (solar panel). Layer_2 and Layer_4 are flat panels of matching size/shape but show only a diagonal structural brace pattern with no cell grid, so they were left Unknown rather than guessed as solar panels.",
+  "mappings": [
+    { "pattern": "layer_0", "component_type": "spacecraft_bus", "material_id": 1 },
+    { "pattern": "layer_1", "component_type": "antenna", "material_id": 7 },
+    { "pattern": "layer_3", "component_type": "solar_panel", "material_id": 2 },
+    { "pattern": "layer_5", "component_type": "solar_panel", "material_id": 2 }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  }
+}

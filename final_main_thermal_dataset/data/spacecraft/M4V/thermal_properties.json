@@ -1,0 +1,11 @@
+{
+  "materials": {
+    "1": { "name": "Bus", "mass": 5.0, "cp": 900, "emissivity": 0.85, "absorptivity": 0.65 },
+    "2": { "name": "Solar Panels", "mass": 1.0, "cp": 750, "emissivity": 0.90, "absorptivity": 0.85 },
+    "3": { "name": "Camera", "mass": 1.0, "cp": 500, "emissivity": 0.80, "absorptivity": 0.60 },
+    "4": { "name": "OBC", "mass": 2.0, "cp": 850, "emissivity": 0.88, "absorptivity": 0.70 },
+    "5": { "name": "Power Module", "mass": 3.0, "cp": 800, "emissivity": 0.90, "absorptivity": 0.75 },
+    "6": { "name": "Reaction Wheel", "mass": 2.0, "cp": 450, "emissivity": 0.75, "absorptivity": 0.60 }
+  },
+  "default": { "mass": 0.05, "cp": 900, "emissivity": 0.85, "absorptivity": 0.70 }
+}

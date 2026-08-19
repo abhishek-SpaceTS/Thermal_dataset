@@ -1,0 +1,56 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "mappings": [
+    {
+      "pattern": "dish",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "panels_",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "foil_gold",
+      "component_type": "foil_gold",
+      "material_id": 8
+    },
+    {
+      "pattern": "foil_silver",
+      "component_type": "foil_silver",
+      "material_id": 9
+    },
+    {
+      "pattern": "lander",
+      "component_type": "lander",
+      "material_id": 10
+    },
+    {
+      "pattern": "bus",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    },
+    {
+      "pattern": "vents",
+      "component_type": "vents",
+      "material_id": 13
+    },
+    {
+      "pattern": "boom",
+      "component_type": "boom",
+      "material_id": 11
+    },
+    {
+      "pattern": "black_krinkle",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_bus_note": "black_krinkle.stl is 84% one box measuring 2.10 x 2.81 x 2.54 m; Rosetta's bus is 2.8 x 2.1 x 2.0 m covered in black MLI. _root.stl is a 12-face 1 m placeholder cube from the glb root node, not real geometry, left unmapped."
+}

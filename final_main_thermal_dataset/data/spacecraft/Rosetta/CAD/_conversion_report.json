@@ -1,0 +1,8 @@
+{
+    "spacecraft": "cad models",
+    "input_model": "Rosetta.glb",
+    "mesh_count": 12,
+    "exported_stls": 12,
+    "failed_exports": [],
+    "status": "success"
+}

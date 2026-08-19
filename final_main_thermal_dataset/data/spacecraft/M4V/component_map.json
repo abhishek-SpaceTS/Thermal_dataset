@@ -1,0 +1,46 @@
+{
+  "cad_units": "mm",
+  "center_com": true,
+  "mappings": [
+    {
+      "pattern": "textured_hex_body",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    },
+    {
+      "pattern": "panel_deployed",
+      "component_type": "solar_panel",
+      "material_id": 2,
+      "offset_cad": [0, -146.4536, -536.6676]
+    },
+    {
+      "pattern": "solar_panels_face",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "cubesat_camera",
+      "component_type": "camera",
+      "material_id": 3
+    },
+    {
+      "pattern": "obc",
+      "component_type": "obc",
+      "material_id": 4
+    },
+    {
+      "pattern": "power_module",
+      "component_type": "power_module",
+      "material_id": 5
+    },
+    {
+      "pattern": "rw",
+      "component_type": "reaction_wheel",
+      "material_id": 6
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 1
+  }
+}

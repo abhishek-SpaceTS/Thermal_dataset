@@ -1,0 +1,8 @@
+{
+    "spacecraft": "cad models",
+    "input_model": "NEAR Shoemaker.glb",
+    "mesh_count": 4,
+    "exported_stls": 4,
+    "failed_exports": [],
+    "status": "success"
+}

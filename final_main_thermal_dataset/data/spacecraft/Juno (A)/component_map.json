@@ -1,0 +1,37 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "dish_*/gold_foil/silver_foil/*_panels follow the established Rosetta/M4V naming convention (matched via shared substrings dish, gold_foil, silver_foil, shiny_panels, solar_panels). tex_01 and tex_01_A were visually inspected: tex_01 is a scatter of tiny disconnected fragments (likely small hardware/connectors) and tex_01_A is a pair of tiny flat discs -- both too small and non-specific to classify confidently, so both were left Unknown. black_krinkle was left Unknown, matching the precedent set by Rosetta's own component_map.json.",
+  "mappings": [
+    {
+      "pattern": "dish",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "gold_foil",
+      "component_type": "foil_gold",
+      "material_id": 8
+    },
+    {
+      "pattern": "silver_foil",
+      "component_type": "foil_silver",
+      "material_id": 9
+    },
+    {
+      "pattern": "shiny_panels",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "solar_panels",
+      "component_type": "solar_panel",
+      "material_id": 2
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_unmapped_note": "No separable bus geometry. tex_01_Geometry-Body.003.stl (10.6%) is 292 small bodies spanning the full 15.8 m width with no central box; the bus is fused into silver_foil_Geometry-Body.002.stl, which is mapped to Silver MLI. Left unmapped rather than guessed."
+}

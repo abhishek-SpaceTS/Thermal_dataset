@@ -1,0 +1,14 @@
+{
+  "materials": {
+    "1": { "name": "Bus", "mass": 5.0, "cp": 900, "emissivity": 0.85, "absorptivity": 0.65 },
+    "2": { "name": "Solar Panels", "mass": 1.0, "cp": 750, "emissivity": 0.90, "absorptivity": 0.85 },
+    "7": { "name": "Antenna", "mass": 2.0, "cp": 800, "emissivity": 0.80, "absorptivity": 0.60 },
+    "8": { "name": "Foil Gold", "mass": 0.5, "cp": 800, "emissivity": 0.05, "absorptivity": 0.25 },
+    "9": { "name": "Foil Silver", "mass": 0.5, "cp": 800, "emissivity": 0.05, "absorptivity": 0.15 },
+    "10": { "name": "Lander", "mass": 8.0, "cp": 850, "emissivity": 0.88, "absorptivity": 0.75 },
+    "11": { "name": "Boom", "mass": 1.0, "cp": 700, "emissivity": 0.75, "absorptivity": 0.50 },
+    "13": { "name": "Vents", "mass": 1.0, "cp": 800, "emissivity": 0.85, "absorptivity": 0.85 },
+    "14": { "name": "Unknown", "mass": 2.0, "cp": 900, "emissivity": 0.85, "absorptivity": 0.65 }
+  },
+  "default": { "mass": 2.0, "cp": 900, "emissivity": 0.85, "absorptivity": 0.65 }
+}

@@ -1,0 +1,37 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "foil_gold/foil_silver/shiny_panel follow the established Rosetta/M4V naming convention. tex_01.stl was visually inspected and shows two long segmented wing arrays (~12m wide), matching Deep Space 1's distinctive large solar concentrator array. black_krinkle.stl was left Unknown, matching the precedent set by Rosetta itself (Rosetta's own component_map.json leaves its black/black_krinkle meshes unmapped).",
+  "mappings": [
+    {
+      "pattern": "foil_gold",
+      "component_type": "foil_gold",
+      "material_id": 8
+    },
+    {
+      "pattern": "foil_silver",
+      "component_type": "foil_silver",
+      "material_id": 9
+    },
+    {
+      "pattern": "shiny_panel",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "tex_01",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "black_krinkle",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_bus_note": "black_krinkle.stl is a single compact 1.19 x 0.95 x 1.03 m box at the model centre - the spacecraft bus under black MLI."
+}

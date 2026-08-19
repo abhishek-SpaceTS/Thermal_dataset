@@ -1,0 +1,68 @@
+{
+  "cad_units": "in",
+  "_cad_units_note": "Authored in INCHES, previously declared m and loading 39.37x oversized. Verified two ways: the HGA dish (cassini_a2) measures 157.5 units against a real 4.0 m antenna = 25.40 mm/unit = exactly 1.000 inch; the magnetometer boom (cassini_14) measures 407.2 units = 10.34 m against a real ~11 m boom.",
+  "center_com": true,
+  "_notes": "Filenames from the GLB->STL export are non-descriptive (cassini_10, cassini_a1, ...) with no semantic content, so every mapping below was determined by visually inspecting that component's isolated geometry (shape, size, position in the assembly) rather than by filename. See per-component reasoning: cassini_10=HGA feed-horn cluster (4 conical horns on a ring), cassini_11=mixed RTG-fin-like towers + small dishes + boom bundle (heterogeneous, left Unknown), cassini_13=HGA dish region + long dipole/whip antenna rods, cassini_14=long rigid single boom (magnetometer-boom-like), cassini_15=two spherical propellant tanks, cassini_a1=cylindrical ribbed drum (bus/equipment module), cassini_a2=parabolic dish reflector shell (rib-backed), cassini_a4=probe-like dome+struts+feet assembly (Huygens-lander-like), cassini_a5=propulsion plumbing/tubing cluster (heterogeneous, left Unknown), cassini_a6=faceted dome/shield of uncertain function (left Unknown), cassini_a7=ribbed rectangular panel cluster (radiator-like), cassini_a8=multi-box instrument pallet, cassini_as=paired engine-nozzle/bell assembly (main engines). No existing material category represents tanks/engines/instruments exactly, so the closest existing analogs were used (tanks/engines -> Bus, instrument boxes -> OBC) per the 'reuse the existing material library' instruction.",
+  "mappings": [
+    {
+      "pattern": "cassini_rtg",
+      "component_type": "rtg",
+      "material_id": 22
+    },
+    {
+      "pattern": "cassini_10",
+      "component_type": "antenna_feed",
+      "material_id": 7
+    },
+    {
+      "pattern": "cassini_13",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "cassini_14",
+      "component_type": "boom",
+      "material_id": 11
+    },
+    {
+      "pattern": "cassini_15",
+      "component_type": "propellant_tank",
+      "material_id": 1
+    },
+    {
+      "pattern": "cassini_a1",
+      "component_type": "spacecraft_bus",
+      "material_id": 1
+    },
+    {
+      "pattern": "cassini_a2",
+      "component_type": "antenna",
+      "material_id": 7
+    },
+    {
+      "pattern": "cassini_a4",
+      "component_type": "lander",
+      "material_id": 10
+    },
+    {
+      "pattern": "cassini_a7",
+      "component_type": "radiator",
+      "material_id": 12
+    },
+    {
+      "pattern": "cassini_a8",
+      "component_type": "instrument",
+      "material_id": 4
+    },
+    {
+      "pattern": "cassini_as",
+      "component_type": "main_engine",
+      "material_id": 1
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_rtg_note": "cassini_rtg.stl was split out of cassini_11.stl: three connected bodies measuring 1.20, 1.12 and 1.06 m long by 0.39-0.75 m, the only bodies of that size among the 131 in the file, sitting together on the lower bus deck. A GPHS-RTG is 1.13 m x 0.43 m and Cassini carries three. Original kept as cassini_11_ORIGINAL_backup.stl outside CAD/."
+}

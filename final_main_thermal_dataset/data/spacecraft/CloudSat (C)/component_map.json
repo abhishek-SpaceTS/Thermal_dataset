@@ -1,0 +1,17 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "BUS/foil_gold/foil_silver/shiny_panel follow the established Rosetta/M4V naming convention directly. AO.stl (a flattened disc/lens shape) was visually confirmed to resemble a radar antenna dish, consistent with CloudSat's real Cloud Profiling Radar antenna. tex_01.stl was visually inspected and shows two large elongated wing/blade shapes matching CloudSat's two deployable solar array wings. metal.stl is a scatter of small generic hardware fittings/brackets with no coherent single type and was left Unknown.",
+  "mappings": [
+    { "pattern": "bus", "component_type": "spacecraft_bus", "material_id": 1 },
+    { "pattern": "foil_gold", "component_type": "foil_gold", "material_id": 8 },
+    { "pattern": "foil_silver", "component_type": "foil_silver", "material_id": 9 },
+    { "pattern": "shiny_panel", "component_type": "solar_panel", "material_id": 2 },
+    { "pattern": "tex_01", "component_type": "solar_panel", "material_id": 2 },
+    { "pattern": "ao", "component_type": "antenna", "material_id": 7 }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  }
+}

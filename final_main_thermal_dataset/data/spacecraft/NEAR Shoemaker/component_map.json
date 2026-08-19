@@ -1,0 +1,32 @@
+{
+  "cad_units": "m",
+  "center_com": true,
+  "_notes": "foil_gold/foil_silver/shiny_panels follow the established Rosetta/M4V naming convention. tex_01.stl was visually inspected and shows four square panels in a clear X/cross layout around a central drum, matching NEAR Shoemaker's real four fixed solar panels, so it was classified as solar_panel alongside shiny_panels.",
+  "mappings": [
+    {
+      "pattern": "foil_gold",
+      "component_type": "foil_gold",
+      "material_id": 8
+    },
+    {
+      "pattern": "foil_silver",
+      "component_type": "foil_silver",
+      "material_id": 9
+    },
+    {
+      "pattern": "shiny_panels",
+      "component_type": "solar_panel",
+      "material_id": 2
+    },
+    {
+      "pattern": "tex_01",
+      "component_type": "solar_panel",
+      "material_id": 2
+    }
+  ],
+  "default": {
+    "component_type": "unknown",
+    "material_id": 14
+  },
+  "_unmapped_note": "No separate bus geometry. foil_gold.stl (40.3%) IS the octagonal bus, modelled as its gold MLI covering and mapped to Gold MLI. Splitting structure from covering is not possible from this CAD."
+}

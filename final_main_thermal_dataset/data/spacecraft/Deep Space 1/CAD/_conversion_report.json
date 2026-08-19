@@ -1,0 +1,8 @@
+{
+    "spacecraft": "cad models",
+    "input_model": "Deep Space 1.glb",
+    "mesh_count": 5,
+    "exported_stls": 5,
+    "failed_exports": [],
+    "status": "success"
+}

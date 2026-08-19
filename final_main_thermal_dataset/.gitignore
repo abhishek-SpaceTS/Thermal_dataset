@@ -1,0 +1,11 @@
+# Ignore all files
+/*
+
+# Except the following
+!/.gitignore
+!/data/
+!/src/
+!/config.m
+!/generate_scenario_with_altitude.m
+!/README.md
+!/run_generation.md
