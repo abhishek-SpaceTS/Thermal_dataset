@@ -8,16 +8,17 @@ Each generated sequence provides high-fidelity, 16-bit apparent-temperature fram
 
 ## 🚀 Quick Start
 
-The entire generation pipeline is controlled through a single configuration file (`config.m`) and executed via a single entry point.
+The entire generation pipeline is controlled through a single configuration file (`final_main_thermal_dataset/config.m`) and executed via a single entry point.
 
-1. **Configure your run:** Open `config.m` to set dataset size, spacecraft models, trajectory brackets, and sensor parameters.
+1. **Configure your run:** Open `final_main_thermal_dataset/config.m` to set dataset size, spacecraft models, trajectory brackets, and sensor parameters.
 2. **Execute the pipeline:** 
    ```matlab
+   cd final_main_thermal_dataset
    run_generation
    ```
 
 > [!TIP]
-> **Debug Mode**: Set `cfg.debug_mode = true;` in `config.m` to run a fast verification pass (generates only 1 sequence of 5 frames per spacecraft) before committing to a full dataset render.
+> **Debug Mode**: Set `cfg.debug_mode = true;` in `final_main_thermal_dataset/config.m` to run a fast verification pass (generates only 1 sequence of 5 frames per spacecraft) before committing to a full dataset render.
 
 ---
 
@@ -48,9 +49,9 @@ final_main_thermal_dataset/
 
 ---
 
-## ⚙️ How to Configure (`config.m`)
+## ⚙️ How to Configure (`final_main_thermal_dataset/config.m`)
 
-The pipeline is completely deterministic and modular. Modify `config.m` to adjust generation parameters without touching the core source code.
+The pipeline is completely deterministic and modular. Modify `final_main_thermal_dataset/config.m` to adjust generation parameters without touching the core source code.
 
 | Goal | Where to Edit |
 |---|---|
@@ -114,15 +115,6 @@ The primary training artifact is `thermal_gray`, a 16-bit image representing **A
 > [!IMPORTANT]
 > The `thermal_rgb` images are heavily tone-mapped derivatives meant for human visualization. **Machine learning models should train exclusively on the 16-bit `thermal_gray` data.**
 
----
-
-## ⚠️ Known Limitations
-
-For complete transparency regarding physical fidelity, please note:
-1. **No Self-Viewing/Self-Occlusion Thermal Reflections:** A face reflects Earth and deep space, but not thermal radiation from other parts of the same spacecraft.
-2. **No Conduction Gradients:** Components have uniform temperatures (plus minor per-face jitter). Real panels exhibit smooth thermal gradients.
-3. **No Thermal Transients:** Temperatures are held at a steady state per frame.
-4. **Earth Emission:** The Earth is treated as a perfect emitter (epsilon=1), which is a 1-2K approximation.
 
 ## 💻 Requirements
 - **MATLAB R2026a** (or newer)
